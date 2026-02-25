@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3S7 | Terminal</title>
+    <style>
+        body { background-color: #0a0a0a; color: #00ff41; font-family: 'Courier New', Courier, monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { border: 1px solid #00ff41; padding: 2rem; box-shadow: 0 0 15px rgba(0, 255, 65, 0.2); }
+        .cursor { display: inline-block; width: 10px; height: 20px; background-color: #00ff41; animation: blink 1s infinite; }
+        @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+        a { color: #00ff41; text-decoration: none; border: 1px solid #00ff41; padding: 5px 10px; margin-top: 20px; display: inline-block; }
+        a:hover { background: #00ff41; color: #0a0a0a; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>> INITIALIZING T3S7_LAB...</div>
+        <div>> STATUS: <span style="color: white;">ONLINE</span></div>
+        <div>> LOCATION: <span style="color: white;">SAITAMA, JP</span></div>
+        <br>
+        <div>Welcome, visitor. This is a full-stack environment.</div>
+        <div style="margin-top: 10px;">
+            <span class="">$</span> <span>Running self-hosted services...</span><span class="cursor"></span>
+        </div>
+    </div>
+</body>
+</html>
