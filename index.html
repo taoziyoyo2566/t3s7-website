@@ -3,25 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T3S7 | Terminal</title>
+    <title>System Maintenance | T3S7</title>
     <style>
-        body { background-color: #0a0a0a; color: #00ff41; font-family: 'Courier New', Courier, monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .container { border: 1px solid #00ff41; padding: 2rem; box-shadow: 0 0 15px rgba(0, 255, 65, 0.2); }
-        .cursor { display: inline-block; width: 10px; height: 20px; background-color: #00ff41; animation: blink 1s infinite; }
-        @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
-        a { color: #00ff41; text-decoration: none; border: 1px solid #00ff41; padding: 5px 10px; margin-top: 20px; display: inline-block; }
-        a:hover { background: #00ff41; color: #0a0a0a; }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: #ffffff;
+            padding: 50px 60px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            max-width: 450px;
+            width: 85%;
+        }
+        .icon-wrapper {
+            margin-bottom: 25px;
+        }
+        .icon {
+            width: 72px;
+            height: 72px;
+            fill: #607d8b;
+            animation: spin 8s linear infinite;
+        }
+        @keyframes spin { 
+            100% { transform: rotate(360deg); } 
+        }
+        h1 {
+            font-size: 26px;
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        p {
+            font-size: 16px;
+            color: #546e7a;
+            line-height: 1.6;
+            margin: 0 0 30px 0;
+        }
+        .footer-text {
+            font-size: 13px;
+            color: #b0bec5;
+            border-top: 1px solid #eceff1;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div>> INITIALIZING T3S7_LAB...</div>
-        <div>> STATUS: <span style="color: white;">ONLINE</span></div>
-        <div>> LOCATION: <span style="color: white;">SAITAMA, JP</span></div>
-        <br>
-        <div>Welcome, visitor. This is a full-stack environment.</div>
-        <div style="margin-top: 10px;">
-            <span class="">$</span> <span>Running self-hosted services...</span><span class="cursor"></span>
+        <div class="icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+        </div>
+        <h1>System Under Maintenance</h1>
+        <p>We are currently performing scheduled infrastructure upgrades. All services will be restored shortly.</p>
+        <div class="footer-text">
+            &copy; 2026 T3S7 Infrastructure. All systems monitored.
         </div>
     </div>
 </body>
